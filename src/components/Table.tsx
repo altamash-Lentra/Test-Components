@@ -21,18 +21,20 @@ export function Table<T extends { id: string | number }>({ columns, rows, pageSi
 
   return (
     <div className="table">
-      <table>
-        <thead>
-          <tr>{columns.map((c) => <th key={String(c.key)}>{c.header}</th>)}</tr>
-        </thead>
-        <tbody>
-          {visible.map((row) => (
-            <tr key={row.id}>
-              {columns.map((c) => <td key={String(c.key)}>{String(row[c.key])}</td>)}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="table__body">
+        <table>
+          <thead>
+            <tr>{columns.map((c) => <th key={String(c.key)}>{c.header}</th>)}</tr>
+          </thead>
+          <tbody>
+            {visible.map((row) => (
+              <tr key={row.id}>
+                {columns.map((c) => <td key={String(c.key)}>{String(row[c.key])}</td>)}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <div className="table__footer">
         <span className="table__summary">
           Showing {rows.length ? start + 1 : 0}–{Math.min(start + pageSize, rows.length)} of {rows.length}
