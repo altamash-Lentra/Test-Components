@@ -1,4 +1,6 @@
-.app { max-width: 880px; margin: 0 auto; padding: 32px 16px; display: flex; flex-direction: column; gap: 24px; }
+.app { max-width: 880px; height: 100dvh; min-height: min-content; margin: 0 auto; padding: 32px 16px; display: flex; flex-direction: column; gap: 24px; }
+.app > .table { flex: 1; min-height: min-content; }
+.app > .table .table__body { contain: size; }
 .app h1 { margin: 0; font-size: 24px; }
 .app__cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
 .app__stat { font-size: 28px; }
