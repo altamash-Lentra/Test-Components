@@ -1,0 +1,7 @@
+.table { border: 1px solid var(--color-border); border-radius: 10px; overflow: hidden; background: var(--color-surface); }
+.table table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.table th { text-align: left; padding: 10px 16px; background: var(--color-muted-bg); font-weight: 600; color: var(--color-text-muted); }
+.table td { padding: 10px 16px; border-top: 1px solid var(--color-border); }
+.table__footer { display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; border-top: 1px solid var(--color-border); gap: 12px; flex-wrap: wrap; }
+.table__summary { font-size: 13px; color: var(--color-text-muted); }
+.table__pages { display: flex; gap: 4px; }

@@ -1,0 +1,16 @@
+.btn {
+  font: inherit;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn--md { padding: 8px 16px; font-size: 14px; }
+.btn--sm { padding: 4px 10px; font-size: 13px; min-width: 32px; }
+.btn--primary { background: var(--color-primary); color: #fff; }
+.btn--primary:hover:not(:disabled) { background: var(--color-primary-hover); }
+.btn--secondary { background: var(--color-surface); color: var(--color-text); border-color: var(--color-border); }
+.btn--secondary:hover:not(:disabled) { border-color: var(--color-primary); }
+.btn--ghost { background: transparent; color: var(--color-text); }
+.btn--ghost:hover:not(:disabled) { background: var(--color-muted-bg); }
